@@ -11,6 +11,7 @@ export class Component2Component implements OnInit {
   right = false;
   type = "monthly";
   typeprice = 1;
+  selectedbox: Number
   lolcost = Number(this.item) * this.typeprice;
   icecost = 2*Number(this.item) * this.typeprice;
     
@@ -44,6 +45,7 @@ export class Component2Component implements OnInit {
 
   onclick(item){
       this.item=item;
+      this.selectedbox =Number(item);
       this.calc();
     }
 }
