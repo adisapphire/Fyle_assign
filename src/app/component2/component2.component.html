@@ -1,0 +1,37 @@
+<div>
+    <h2 class="compare-pricing-toda">Compare pricing today!</h2>
+    <h4 class="lorem-ipsum-is-simpl">Lorem Ipsum is simply dummy text of the printing and <a href="fyle.com">typesetting</a>.</h4>
+  
+      <div class="row mt-5 d-flex justify-content-center">
+        <div (click)="onclick(item)" id ="asd" *ngFor="let item of items" class="rectangle px-2 col-sm-2 d-flex justify-content-center serving">{{item}} Serving</div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5">
+        <h4 class="annual">Annual<br/><h4 class="off">50% off</h4></h4> 
+      <div class="toogle"><div [style.float]="toggle()" (click)="right = !right" class="oval"></div></div>
+      <h4 class="monthly ml-3">Monthly</h4> 
+    </div>
+  
+
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="row big-box">
+          <div class="col-5">
+            <h2 class="your-savings-with-lo ml-4 mt-5">lollipop</h2>
+        <h4 class="money1 ml-4 mt-3 w-100">${{lolcost}}<h5 class="month">per {{type}}</h5></h4>
+        <h5 class="month1 ml-4 w-100">For {{item}} serving</h5></div>
+        
+          <div class="col-5">
+            <h2 class="your-savings-with-lo ml-4 mt-5">Icecandy</h2>
+        <h4 class="money1 ml-4 mt-3">${{icecost}}<h5 class="month">per {{type}}</h5></h4>
+        <h5 class="month1 ml-4 w-100">For {{item}} serving</h5></div>
+      </div>
+      <div class="small-box">
+        <h2 class="your-savings-with-lo ml-4 mt-5">Your savings<br/>
+            with lollipop</h2>
+        <h4 class="money ml-4 mt-3">${{lolcost}}</h4>
+        <h5 class="month ml-4">per {{type}}</h5>
+      </div>
+    </div>
+  
+  
+  </div>
